@@ -42,8 +42,7 @@ if(window.location.href.indexOf("shopicruit.myshopify.com") === -1) {
     xhr.onload = function () {
         var oResponse = JSON.parse(xhr.responseText);
         var aOrders = oResponse.orders;
-        var fRevenuePerPage = revenuePerPage(aOrders);
-        fTotalRevenue += fRevenuePerPage;
+        fTotalRevenue += revenuePerPage(aOrders);
         if(!bEmptyPage) {
             window.console.log("Total revenue so far is: " + fTotalRevenue.toFixed(2) + " CDN");
         } else {
