@@ -1,5 +1,5 @@
 "use strict";
-if(window.location.href.indexOf("shopicruit.myshopify.com") === -1) {
+if(window.location.href.indexOf("https://shopicruit.myshopify.com") === -1) {
     window.console.log("please run this JavaScript under https://shopicruit.myshopify.com/");
     window.console.log("because this code doesn't support cross origin request!");
 } else {
